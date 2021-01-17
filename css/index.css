@@ -140,7 +140,7 @@ li{list-style: none;}
   padding: 0px;
   background-color: #333333;
   outline: none;
-  cursor: default;
+  cursor: pointer;
 }
 
 .upimags_person_img:hover p{
