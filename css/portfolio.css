@@ -3,3 +3,65 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
+.test{
+  color: red;
+}
+
+main{
+  width: 100vw;
+  height: 100vh;
+  background-color: #C4C4C4;
+  display: flex;
+  align-items: center;
+}
+
+.left-logo{
+  width: 30vw;
+  margin-top: 20vw;
+  padding-top: 3vw;
+  padding-right: 1vw;
+  transform: rotate(270deg);
+  transform-origin: left top;
+}
+
+.left-logo-name{
+  font-size: 3vw;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 0.4vw;
+  color: #40E0D0;
+}
+
+.right-box{
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-web{
+  width: 30vw;
+  height: 10vw;
+  background-color: #7C7C7C;
+  position: absolute;
+  top: 17%;
+  left: 38%;
+}
+
+.menu-roadmap{
+  width: 30vw;
+  height: 10vw;
+  background-color: #7C7C7C;
+  position: absolute;
+  top: 40%;
+  left: 60%;
+}
+
+.menu-pgrowth{
+  width: 30vw;
+  height: 10vw;
+  background-color: #7C7C7C;
+  position: absolute;
+  top: 63%;
+  left: 38%;
+}
+
