@@ -13,10 +13,10 @@ body {
   align-items: center;
 }
 
-.main_banner{
+.main_banner {
   width: 28vw;
   height: 9vw;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   border-color: black;
   display: flex;
   align-items: center;
@@ -25,13 +25,13 @@ body {
   font-weight: bold;
 }
 
-h1{
+h1 {
   font-size: 3vw;
   font-style: italic;
   font-weight: bold;
   padding: 2vh;
 }
-h2{
+h2 {
   font-size: 3vw;
   font-style: italic;
   font-weight: bold;
@@ -44,7 +44,7 @@ h2{
 .week1 {
   width: 100vw;
   height: 50vh;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
 }
 
 .week2 {
@@ -56,7 +56,7 @@ h2{
 .week3 {
   width: 100vw;
   height: 50vh;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
 }
 
 .week4 {
@@ -68,7 +68,7 @@ h2{
 .week5 {
   width: 100vw;
   height: 50vh;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
 }
 
 .week6 {
