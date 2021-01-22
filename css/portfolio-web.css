@@ -31,48 +31,17 @@ h1{
   font-weight: bold;
   padding: 2vh;
 }
-h2{
-  font-size: 3vw;
-  font-style: italic;
-  font-weight: bold;
-  padding: 2vh;
+
+.week2, .week4, .week6{
+  width: 100vw;
+  height: 50vh;
+  background-color: #7c7c7c;
   display: flex;
-  margin-right: 2vw;
   flex-direction: row-reverse;
 }
 
-.week1 {
+.week1, .week3, .week5 {
   width: 100vw;
   height: 50vh;
   background-color: #C4C4C4;
-}
-
-.week2 {
-  width: 100vw;
-  height: 50vh;
-  background-color: #7c7c7c;
-}
-
-.week3 {
-  width: 100vw;
-  height: 50vh;
-  background-color: #C4C4C4;
-}
-
-.week4 {
-  width: 100vw;
-  height: 50vh;
-  background-color: #7c7c7c;
-}
-
-.week5 {
-  width: 100vw;
-  height: 50vh;
-  background-color: #C4C4C4;
-}
-
-.week6 {
-  width: 100vw;
-  height: 50vh;
-  background-color: #7c7c7c;
 }
