@@ -23,6 +23,7 @@ main{
   padding-right: 1vw;
   transform: rotate(270deg);
   transform-origin: left top;
+  user-select: none;
 }
 
 .left-logo-name{
@@ -45,6 +46,9 @@ main{
   position: absolute;
   top: 17%;
   left: 38%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-roadmap{
@@ -54,6 +58,9 @@ main{
   position: absolute;
   top: 40%;
   left: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-pgrowth{
@@ -63,5 +70,8 @@ main{
   position: absolute;
   top: 63%;
   left: 38%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
