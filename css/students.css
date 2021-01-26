@@ -1,5 +1,52 @@
+@font-face {
+  font-family: 'MaruBuri-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   width: 100vw;
   height: 100vh;
+  background-color: #7C7C7C;
+}
+
+.btns{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 220px;
+}
+
+.uni{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.uni_btn{
+  width: 700px;
+  height: 150px;
+}
+
+.info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 700px;
+  margin-top: 60px;
+}
+
+.info_btn1{height: 150px; width: 320px;}
+.info_btn2{height: 150px; width: 320px;}
+
+.btn--text{
+  font-size: 50px;
+  letter-spacing: 10px;
+  font-family: 'MaruBuri-Regular';
+  font-weight: bold;
 }
