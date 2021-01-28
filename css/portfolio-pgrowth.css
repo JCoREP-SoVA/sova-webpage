@@ -5,9 +5,24 @@ body {
 }
 
 .vedio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
 }
+.video_box{
+  width: 50vw;
+  height: 50vh;
+}
+
+
+
+
+
+
+
+
 
 .members {
   width: 100vw;
@@ -22,5 +37,33 @@ body {
 
 .member-detail {
   width: 100vw;
-  height: 55vh;
+  height: 100vh;
+}
+
+.member1{
+  padding-left: 10vw;
+  width: 80vw;
+  height: 27.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.member2{
+  padding-left: 5vw;
+  width: 90vw;
+  height: 27.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.img_s{
+  border-radius: 70%;
+  overflow: hidden;
+}
+.img_s:hover{
+  box-shadow: rgba(14, 197, 221, 0.56) 0px 22px 70px 4px;
+}
+.img_s:active{
+  box-shadow: rgba(55, 5, 236, 0.56) 0px 22px 70px 4px;
 }
