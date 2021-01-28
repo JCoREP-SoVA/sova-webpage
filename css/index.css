@@ -3,3 +3,200 @@ body {
   width: 100vw;
   height: 200vh;
 }
+
+header{z-index: 3;}
+.list{list-style: none;}
+li{list-style: none;}
+.slides{
+  height: 85vh;
+  position: relative;
+  overflow: hidden;
+  padding-top: 15vh;
+  z-index: 1;
+}
+.list{
+  width: 400%; /*이미지가 4개라 400% 한페이지에 100%*/
+  height: 100%;
+  transition: 1s;
+}
+.list::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.list li{
+  float: left;
+  width: 25%;
+  height: 100%;
+  position: relative;
+}
+.list li img{
+  width: 100%;
+  height: 100%;
+}
+
+.list label{
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.left{
+  left: 60px;
+}
+.right{
+  right: 60px;
+}
+
+.list label i{
+  font-size: 60px;
+  width: 60px;
+}
+
+.slides input{display: none;}
+.slide label{
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  border: 2px;
+  margin: 10px;
+  background-color: #a5a5a59d;
+  transition: 0.3s;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slides .slide{
+  text-align: center;
+  position: absolute;
+  bottom: 90px;
+  left: 0;
+  width:100%;
+}
+#slide1:checked~ul{margin-left: 0%;}
+#slide2:checked~ul{margin-left: -100%;}
+#slide3:checked~ul{margin-left: -200%;}
+#slide4:checked~ul{margin-left: -300%;}
+#slide1:checked~.slide>label:nth-child(1){background-color: white;}
+#slide2:checked~.slide>label:nth-child(2){background-color: white;}
+#slide3:checked~.slide>label:nth-child(3){background-color: white;}
+#slide4:checked~.slide>label:nth-child(4){background-color: white;}
+
+.upline{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15vh;
+}
+
+.upline_name{
+  font-size: 2.5vw;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+}
+
+#hline{
+  width: 43vw;
+  height: 1px;
+  margin: 0px;
+  background-color: white;
+  border: none;
+}
+
+.upimgs{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  margin-left: 10vw;
+}
+
+.underimgs{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 10vh;
+  margin-left: 18vw;
+}
+
+.upimgs_person{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 18vw;
+}
+
+.upimags_person_img{
+  border: none;
+  border-radius: 50%;
+  padding: 0px;
+  background-color: #333333;
+  outline: none;
+  cursor: pointer;
+}
+
+.upimags_person_img:hover p{
+  display: block;
+  transform-origin: 100% 0%;
+
+  -webkit-animation: fadeln 0.3s ease-in-out;
+  animation: fadeln 0.3s ease-in-out;
+}
+
+.upimags_person_img p{
+  display: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  position: absolute;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.upimags_person_img p:after{
+  width: 100%;
+  height: 20px;
+  content: '';
+  position: absolute;
+}
+
+@-webkit-keyframes fadeln{
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 100%;
+    transform: scale(2);
+  }
+}
+
+@keyframes fadeln{
+  0% { opacity: 0; }
+  100% {opacity: 100%;}
+}
+
+.upimags_person_img img{
+  width: 150px;
+  height: 150px;
+}
+
+.upimgs_person_name{
+  padding: 5px;
+  font-size: 110%;
+  color: rgb(139, 139, 139);
+}
+
+.upimgs_person_email{
+  font-size: 90%;
+  color: rgb(139, 139, 139);
+}
+
+

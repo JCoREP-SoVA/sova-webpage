@@ -3,9 +3,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5vw;
-  padding-top: 1vh;
-  position: fixed;
+  padding: 1rem 5rem;
+  padding-right: 2rem;
   width: 100vw;
 }
 
@@ -15,7 +14,7 @@ a {
 }
 
 .header-logo img {
-  width: 10vw;
+  width: 5rem;
 }
 
 .header-menus {
