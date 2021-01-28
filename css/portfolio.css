@@ -11,12 +11,18 @@ body {
 main{
   width: 100vw;
   height: 100vh;
-  background-color: #C4C4C4;
+  background-image: url("../img/cloud.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
   display: flex;
   align-items: center;
 }
 
 .left-logo{
+  margin-top: 5vh;
+  margin-left: 5vw;
+
   width: 30vw;
   margin-top: 20vw;
   padding-top: 3vw;
@@ -40,38 +46,147 @@ main{
 }
 
 .menu-web{
-  width: 30vw;
-  height: 10vw;
-  background-color: #7C7C7C;
+  width: 35vw;
+  height: 11vw;
+  background-image: url("../img/소바최고.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
-  top: 17%;
-  left: 38%;
+  top: 19%;
+  left: 35%;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .menu-roadmap{
-  width: 30vw;
-  height: 10vw;
-  background-color: #7C7C7C;
+  width: 35vw;
+  height: 11vw;
+  background-image: url("../img/소바최고.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
-  top: 40%;
-  left: 60%;
+  top: 44%;
+  left: 57%;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .menu-pgrowth{
-  width: 30vw;
-  height: 10vw;
-  background-color: #7C7C7C;
+  width: 35vw;
+  height: 11vw;
+  background-image: url("../img/소바최고.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
-  top: 63%;
-  left: 38%;
+  top: 69%;
+  left: 35%;
+
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.menu-web-txt{
+  position: absolute;
+  left: 20%;
+  top: 70%;
+  font-size: 30px;
+  font-weight: bold;
+  transform: scale(2,2);
+  transition: all 0.25s linear 0.2s;
+  opacity: 0;
+}
+.menu-web-txt2{
+  position: absolute;
+  left: 70%;
+  top: 20%;
+  font-size: 30px;
+  font-weight: bold;
+  transform: scale(2,2);
+  transition: all 0.25s linear 0.2s;
+  opacity: 0;
+}
+.menu-web:hover{
+  background-image: url("../img/소바단체사진.jpeg");
+}
+
+.menu-web:hover .menu-web-txt{
+  opacity: 1;
+  transform: scale(1,1);
+  left: 70%;
+}
+.menu-web:hover .menu-web-txt2{
+  opacity: 1;
+  transform: scale(1,1);
+  left: 15%;
+}
+.menu-roadmap-txt{
+  position: absolute;
+  left: 20%;
+  top: 70%;
+  font-size: 30px;
+  font-weight: bold;
+  transform: scale(2,2);
+  transition: all 0.25s linear 0.2s;
+  opacity: 0;
+}
+.menu-roadmap-txt2{
+  position: absolute;
+  left: 70%;
+  top: 20%;
+  font-size: 30px;
+  font-weight: bold;
+  transform: scale(2,2);
+  transition: all 0.25s linear 0.2s;
+  opacity: 0;
+}
+.menu-roadmap:hover{
+  background-image: url("../img/소바단체사진.jpeg");
+}
+.menu-roadmap:hover .menu-roadmap-txt{
+  opacity: 1;
+  transform: scale(1,1);
+  left: 70%;
+}
+.menu-roadmap:hover .menu-roadmap-txt2{
+  opacity: 1;
+  transform: scale(1,1);
+  left: 15%;
+}
+.menu-pgrowth-txt{
+  position: absolute;
+  left: 20%;
+  top: 70%;
+  font-size: 30px;
+  font-weight: bold;
+  transform: scale(2,2);
+  transition: all 0.25s linear 0.2s;
+  opacity: 0;
+}
+.menu-pgrowth-txt2{
+  position: absolute;
+  left: 70%;
+  top: 20%;
+  font-size: 30px;
+  font-weight: bold;
+  transform: scale(2,2);
+  transition: all 0.25s linear 0.2s;
+  opacity: 0;
+}
+.menu-pgrowth:hover{
+  background-image: url("../img/소바단체사진.jpeg");
+}
+.menu-pgrowth:hover .menu-pgrowth-txt{
+  opacity: 1;
+  transform: scale(1,1);
+  left: 70%;
+}
+.menu-pgrowth:hover .menu-pgrowth-txt2{
+  opacity: 1;
+  transform: scale(1,1);
+  left: 15%;
 }
 

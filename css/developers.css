@@ -22,18 +22,14 @@ main {
 
 .developers_developers-title {
   writing-mode: vertical-rl;
+  transform: rotate(180deg);
   font-size: 80px;
   font-weight: bold;
+  margin-top: 1.5em;
+  margin-left: 1.2em;
   padding-top: 1.7em;
-  padding-left: 1em;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(64, 224, 208, 1) 100%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  -webkit-background-clip: text;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,224,208,1) 100%, rgba(0,212,255,1) 100%);
   -webkit-text-fill-color: transparent;
   -webkit-box-reflect: right -4vmin -webkit-gradient(
       linear,
@@ -46,9 +42,11 @@ main {
 }
 
 .developers_developers-contents {
+  box-sizing: border-box;
   font-size: 24px;
   padding-top: 13em;
   padding-right: 30px;
+  margin-bottom: 3em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -67,6 +65,7 @@ main {
 }
 
 .vision_vision {
+  box-sizing: border-box;
   padding-left: 90px;
   padding-top: 40px;
   font-size: 70px;
@@ -84,6 +83,7 @@ main {
 }
 
 .vision_list {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   line-height: normal;
@@ -114,6 +114,7 @@ main {
 }
 
 .core-value_title {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   font-size: 70px;
@@ -128,6 +129,7 @@ main {
 }
 
 .core-value_values {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
@@ -135,6 +137,7 @@ main {
 }
 
 .core-value_values-value {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -156,6 +159,7 @@ main {
 }
 
 .jcorep {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   padding-top: 30px;
@@ -167,6 +171,7 @@ main {
 }
 
 .jcorep_title {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -202,6 +207,7 @@ main {
 }
 
 .jcorep_contents {
+  box-sizing: border-box;
   display: none;
   padding: 10px;
   margin-left: 50px;
