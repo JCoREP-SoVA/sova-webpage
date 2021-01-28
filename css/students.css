@@ -5,11 +5,22 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Jal_Onuel';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Onuel.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   width: 100vw;
   height: 100vh;
   background-color: #7C7C7C;
+}
+
+main{
+  font-family: 'Jal_Onuel';
 }
 
 .btns{
@@ -47,6 +58,69 @@ body {
 .btn--text{
   font-size: 50px;
   letter-spacing: 10px;
-  font-family: 'MaruBuri-Regular';
   font-weight: bold;
+  font-family: 'Jal_Onuel';
 }
+
+
+
+
+.students-coding_name,
+.students-kmu_name,
+.students-entrance_name{
+  text-align: center;
+  font-size: 75px;
+  background-color: #C4C4C4;
+  padding: 15vh 0vw;
+}
+
+.students-coding_post1,
+.students-coding_post2,
+.students-kmu_post1,
+.students-kmu_post2,
+.students-entrance_post1,
+.students-entrance_post2{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding: 5vh 0px;
+}
+
+.students-coding_post2,
+.students-kmu_post2,
+.students-entrance_post2{
+  background-color: #C4C4C4;
+}
+
+.coding_post_img,
+.kmu_post_img,
+.entrance_post_img{
+  width: 18vw;
+  height: 25vh;
+  margin-left: 5vw;
+}
+
+.coding_post_info,
+.kmu_post_info,
+.entrance_post_info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-left: 3vw;
+}
+
+.coding_post_info_name,
+.kmu_post_info_name,
+.entrance_post_info_name{
+  font-size: 7vh;
+}
+
+.coding_post_info_info,
+.kmu_post_info_info,
+.entrance_post_info_info{
+  font-size: 3.5vh;
+  padding-top: 2vh;
+}
+
