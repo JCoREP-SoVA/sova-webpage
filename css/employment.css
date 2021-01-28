@@ -17,7 +17,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 220px;
+  padding-top: 30vh;
 }
 
 .uni{
@@ -25,11 +25,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.uni_btn{
-  width: 700px;
-  height: 150px;
 }
 
 .info{
