@@ -31,7 +31,9 @@ main{
   padding: 10vh;
 }
 
-.uni{
+.uni,
+.hire,
+.job{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -41,13 +43,23 @@ main{
 
 .uni *,
 .uni:before,
-.uni:after {
+.uni:after,
+.hire *,
+.hire:before,
+.hire:after,
+.job *,
+.job:before,
+.job:after {
   box-sizing: border-box;
   transition: all 0.3s linear;
 }
 
 .uni:before,
-.uni:after {
+.uni:after,
+.hire:before,
+.hire:after,
+.job:before,
+.job:after {
   content: "";
   position: absolute;
   top: 0px;
@@ -59,14 +71,18 @@ main{
   border-color: transparent #7c7c7c;
 }
 
-.uni img {
+.uni img,
+.job img,
+.hire img {
   max-width: 100%;
   backface-visibility: hidden; /* 뒷면 안보이게 */
   vertical-align: top;
   padding: 10px;
 }
 
-.uni .uni_hover {
+.uni .uni_hover,
+.job .job_hover,
+.hire .hire_hover{
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -75,7 +91,9 @@ main{
   opacity: 0;
 }
 
-.uni a {
+.uni a,
+.job a,
+.hire a{
   position: absolute;
   top: 0;
   bottom: 0;
@@ -84,7 +102,9 @@ main{
   z-index: 1;
 }
 
-.uni:hover .uni_hover {
+.uni:hover .uni_hover,
+.hire:hover .hire_hover,
+.job:hover .job_hover {
   opacity: 1;
   transform: translateX(0);
 }
@@ -95,11 +115,21 @@ main{
   height: 27vh;
 }
 
-.uni_img_before{
+.job_img_before,
+.job_img_after,
+.hire_img_before,
+.hire_img_after{
+  height: 27vh; 
+  width: 23vw;
+}
+
+.uni_img_before,
+.job_img_before,
+.hire_img_before{
   filter: blur(2px) grayscale(100%);
 }
 
-.uni_span{
+.text_span{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -118,15 +148,6 @@ main{
   margin-top: 3.5vw;
 }
 
-.info_btn1{height: 27vh; width: 23vw;}
-.info_btn2{height: 27vh; width: 23vw;}
-
-.btn--text{
-  font-size: 7vh;
-  letter-spacing: 10px;
-  font-family: 'Jal_Onuel';
-  font-weight: bold;
-}
 
 
 

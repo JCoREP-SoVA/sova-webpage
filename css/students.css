@@ -28,19 +28,115 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 220px;
+  padding: 10vh;
 }
 
-.uni{
+.uni,
+.coding,
+.entrance{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
-.uni_btn{
-  width: 700px;
-  height: 150px;
+.uni *,
+.uni:before,
+.uni:after,
+.coding *,
+.coding:before,
+.coding:after,
+.entrance *,
+.entrance:before,
+.entrance:after {
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+}
+
+.uni:before,
+.uni:after,
+.coding:before,
+.coding:after,
+.entrance:before,
+.entrance:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: -1;
+  border: 2px solid #bbb;
+  border-color: transparent #7c7c7c;
+}
+
+.uni img,
+.entrance img,
+.coding img {
+  max-width: 100%;
+  backface-visibility: hidden; /* 뒷면 안보이게 */
+  vertical-align: top;
+  padding: 10px;
+}
+
+.uni .uni_hover,
+.coding .coding_hover,
+.entrance .entrance_hover{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 0;
+}
+
+.uni a,
+.entrance a,
+.coding a{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.uni:hover .uni_hover,
+.coding:hover .coding_hover,
+.entrance:hover .entrance_hover {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.uni_img_before,
+.uni_img_after{
+  width: 50vw;
+  height: 27vh;
+}
+
+.coding_img_before,
+.coding_img_after,
+.entrance_img_before,
+.entrance_img_after{
+  height: 27vh; 
+  width: 23vw;
+}
+
+.uni_img_before,
+.coding_img_before,
+.entrance_img_before{
+  filter: blur(2px) grayscale(100%);
+}
+
+.text_span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 7vh;
+  z-index: 1;
+  font-weight: bold;
 }
 
 .info{
@@ -48,18 +144,8 @@ main{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 700px;
-  margin-top: 60px;
-}
-
-.info_btn1{height: 150px; width: 320px;}
-.info_btn2{height: 150px; width: 320px;}
-
-.btn--text{
-  font-size: 50px;
-  letter-spacing: 10px;
-  font-weight: bold;
-  font-family: 'Jal_Onuel';
+  width: 50vw;
+  margin-top: 3.5vw;
 }
 
 
