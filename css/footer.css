@@ -1,0 +1,28 @@
+footer {
+  width: 100vw;
+  height: 12vh;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5vh 10vw;
+}
+
+.footer-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* <footer>
+    <div class="footer-title">
+      <span>Hello World! Hello SoVA!</span>
+    </div>
+    <div class="footer-detail">
+      <span>e-mail: sova.jcorep6@gmail.com</span>
+      <span>찾아오시는 길: 서울특별시 성북구 정릉로 77 (국민대학교)</span>
+    </div>
+  </footer> */
