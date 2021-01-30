@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Jal_Onuel';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Onuel.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   width: 100vw;
@@ -12,19 +19,124 @@ body {
   background-color: #7C7C7C;
 }
 
+main{
+  font-family: 'Jal_Onuel';
+}
+
 .btns{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 30vh;
+  padding: 10vh;
 }
 
-.uni{
+.uni,
+.hire,
+.job{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.uni *,
+.uni:before,
+.uni:after,
+.hire *,
+.hire:before,
+.hire:after,
+.job *,
+.job:before,
+.job:after {
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+}
+
+.uni:before,
+.uni:after,
+.hire:before,
+.hire:after,
+.job:before,
+.job:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: -1;
+  border: 2px solid #bbb;
+  border-color: transparent #7c7c7c;
+}
+
+.uni img,
+.job img,
+.hire img {
+  max-width: 100%;
+  backface-visibility: hidden; /* 뒷면 안보이게 */
+  vertical-align: top;
+  padding: 10px;
+}
+
+.uni .uni_hover,
+.job .job_hover,
+.hire .hire_hover{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 0;
+}
+
+.uni a,
+.job a,
+.hire a{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.uni:hover .uni_hover,
+.hire:hover .hire_hover,
+.job:hover .job_hover {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.uni_img_before,
+.uni_img_after{
+  width: 50vw;
+  height: 27vh;
+}
+
+.job_img_before,
+.job_img_after,
+.hire_img_before,
+.hire_img_after{
+  height: 27vh; 
+  width: 23vw;
+}
+
+.uni_img_before,
+.job_img_before,
+.hire_img_before{
+  filter: blur(2px) grayscale(100%);
+}
+
+.text_span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 7vh;
+  z-index: 1;
+  font-weight: bold;
 }
 
 .info{
@@ -32,18 +144,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 700px;
-  margin-top: 60px;
-}
-
-.info_btn1{height: 150px; width: 320px;}
-.info_btn2{height: 150px; width: 320px;}
-
-.btn--text{
-  font-size: 50px;
-  letter-spacing: 10px;
-  font-family: 'MaruBuri-Regular';
-  font-weight: bold;
+  width: 50vw;
+  margin-top: 3.5vw;
 }
 
 
@@ -53,11 +155,63 @@ body {
 
 
 
-.none{
-  background-color: #333333;
-  height: 10vh;
+
+.employment-hire_name,
+.employment-kmu_name,
+.employment-job_name{
+  text-align: center;
+  font-size: 75px;
+  background-color: #C4C4C4;
+  padding: 15vh 0vw;
 }
 
-.employment-hire_name{
-  
+.employment-hire_post1,
+.employment-hire_post2,
+.employment-kmu_post1,
+.employment-kmu_post2,
+.employment-job_post1,
+.employment-job_post2{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding: 5vh 0px;
 }
+
+.employment-hire_post2,
+.employment-kmu_post2,
+.employment-job_post2{
+  background-color: #C4C4C4;
+}
+
+.hire_post_img,
+.kmu_post_img,
+.job_post_img{
+  width: 18vw;
+  height: 25vh;
+  margin-left: 5vw;
+}
+
+.hire_post_info,
+.kmu_post_info,
+.job_post_info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-left: 3vw;
+}
+
+.hire_post_info_name,
+.kmu_post_info_name,
+.job_post_info_name{
+  font-size: 7vh;
+}
+
+.hire_post_info_info,
+.kmu_post_info_info,
+.job_post_info_info{
+  font-size: 3.5vh;
+  padding-top: 2vh;
+}
+

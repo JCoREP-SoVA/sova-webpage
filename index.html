@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>SoVA</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/index.css" />
     <script src="https://kit.fontawesome.com/165cf95758.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
   <body>
     <header>
@@ -16,7 +17,7 @@
         <img src="img/sova-logo.png" alt="" /> 
       </div>
       <div class="header-menus">
-        <a href="index.html"><span class="menu-item">Home</span></a>
+        <a href="#"><span class="menu-item">Home</span></a>
         <a href="students.html"><span class="menu-item">Students</span></a>
         <a href="employment.html"><span class="menu-item">Employment</span></a>
         <a href="portfolio.html"><span class="menu-item">Portfolio</span></a>
@@ -78,7 +79,7 @@
         <div class="upimgs">
           <div class="upimgs_person">
             <button class="upimags_person_img">
-              <img src="img/나영.png" alt="">
+              <img src="img/1나영.png" alt="" onclick="copyemail('nayeong')">
               <p>클릭하면 팀원의 이메일이 복사됩니다ᕕ( ᐛ )ᕗ</p>
             </button>
             <span class="upimgs_person_name">정나영</span>
@@ -86,7 +87,7 @@
           </div>
           <div class="upimgs_person">
             <button class="upimags_person_img">
-              <img src="img/철환.png" alt="">
+              <img src="img/2철환_profile.png" alt="" onclick="copyemail('cheolhwan')">
               <p>클릭하면 팀원의 이메일이 복사됩니다ᕕ( ᐛ )ᕗ</p>
             </button>
             <span class="upimgs_person_name">하철환</span>
@@ -94,7 +95,7 @@
           </div>
           <div class="upimgs_person">
             <button class="upimags_person_img">
-              <img src="img/하람.png" alt="">
+              <img src="img/3하람 1.png" alt="" onclick="copyemail('haram')">
               <p>클릭하면 팀원의 이메일이 복사됩니다ᕕ( ᐛ )ᕗ</p>
             </button>
             <span class="upimgs_person_name">정하람</span>
@@ -102,7 +103,7 @@
           </div>
           <div class="upimgs_person">
             <button class="upimags_person_img">
-              <img src="img/현지.png" alt="">
+              <img src="img/4현지 1.png" alt="" onclick="copyemail('hyeonji')">
               <p>클릭하면 팀원의 이메일이 복사됩니다ᕕ( ᐛ )ᕗ</p>
             </button>
             <span class="upimgs_person_name">홍현지</span>
@@ -112,7 +113,7 @@
         <div class="underimgs">
           <div class="upimgs_person">
             <button class="upimags_person_img">
-              <img src="img/관우.png" alt="">
+              <img src="img/5관우 1.png" alt="" onclick="copyemail('kwanu')">
               <p>클릭하면 팀원의 이메일이 복사됩니다ᕕ( ᐛ )ᕗ</p>
             </button>
             <span class="upimgs_person_name">신관우</span>
@@ -120,7 +121,7 @@
           </div>
           <div class="upimgs_person">
             <button class="upimags_person_img">
-              <img src="img/현상.png" alt="">
+              <img src="img/6현상 1.png" alt="" onclick="copyemail('hyunsang')">
               <p>클릭하면 팀원의 이메일이 복사됩니다ᕕ( ᐛ )ᕗ</p>
             </button>
             <span class="upimgs_person_name">조현상</span>
@@ -128,7 +129,7 @@
           </div>
           <div class="upimgs_person">
             <button class="upimags_person_img">
-              <img src="img/의현.png" alt="">
+              <img src="img/7의현 1.png" alt="" onclick="copyemail('uihyun')">
               <p>클릭하면 팀원의 이메일이 복사됩니다ᕕ( ᐛ )ᕗ</p>
             </button>
             <span class="upimgs_person_name">정의현</span>
@@ -136,7 +137,7 @@
           </div>
           <div class="upimgs_person">
             <button class="upimags_person_img">
-              <img src="img/한결.png" alt="">
+              <img src="img/8한결 1.png" alt="" onclick="copyemail('hangyul')">
               <p>클릭하면 팀원의 이메일이 복사됩니다ᕕ( ᐛ )ᕗ</p>
             </button>
             <span class="upimgs_person_name">정한결</span>
@@ -145,6 +146,16 @@
         </div>
       </section>
     </main>
+    <footer>
+      <div class="footer-title">
+        <span>Hello World! Hello SoVA!</span>
+      </div>
+      <div class="footer-detail">
+        <span>e-mail: sova.jcorep6@gmail.com</span>
+        <span>찾아오시는 길: 서울특별시 성북구 정릉로 77 (국민대학교)</span>
+      </div>
+    </footer>
+    <script src="js/copyEmail.js"></script>
   </body>
 </html>
 
