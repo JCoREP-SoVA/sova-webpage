@@ -32,16 +32,27 @@ h1{
   padding: 2vh;
 }
 
-.week2, .week4, .week6{
-  width: 100vw;
-  height: 50vh;
-  background-color: #7c7c7c;
-  display: flex;
-  flex-direction: row-reverse;
-}
 
-.week1, .week3, .week5 {
+
+
+.week1{
   width: 100vw;
   height: 50vh;
   background-color: #C4C4C4;
 }
+
+.animateOut{
+  width: 100vw;
+  height: 50vh;
+  background-color: #7c7c7c;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.animateIn{
+  width: 100vw;
+  height: 50vh;
+  background-color: #7c7c7c;
+  opacity: 1;
+  transition: opacity 2.5s ease;
+}
+

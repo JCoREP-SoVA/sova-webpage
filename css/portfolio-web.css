@@ -11,6 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: watch 0.3s linear infinite both;
 }
 
 .main_banner {
@@ -32,20 +33,37 @@ h1 {
   padding: 2vh;
 }
 
-.week2,
-.week4,
-.week6 {
-  width: 100vw;
-  height: 50vh;
-  background-color: #7c7c7c;
-  display: flex;
-  flex-direction: row-reverse;
-}
 
-.week1,
-.week3,
-.week5 {
+.week1{
   width: 100vw;
   height: 50vh;
   background-color: #c4c4c4;
 }
+
+.animateOut{
+  width: 100vw;
+  height: 50vh;
+  background-color: #7c7c7c;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.animateIn{
+  width: 100vw;
+  height: 50vh;
+  background-color: #7c7c7c;
+  opacity: 1;
+  transition: opacity 2.5s ease;
+}
+
+
+
+
+/* @keyframes watch{
+  0% {transform: translate(0)}
+  20%{transform: translate(-2px,2px)}
+  40%{transform: translate(-2px,-2px)}
+  60%{transform: translate(2px,2px)}
+  80%{transform: translate(2px,-2px)}
+  100%{transform: translate(0)}
+} */
+
