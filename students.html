@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>SoVA</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/students.css" />
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
   <body>
     <header>
@@ -16,7 +17,7 @@
       </div>
       <div class="header-menus">
         <a href="index.html"><span class="menu-item">Home</span></a>
-        <a href="students.html"><span class="menu-item">Students</span></a>
+        <a href="#"><span class="menu-item">Students</span></a>
         <a href="employment.html"><span class="menu-item">Employment</span></a>
         <a href="portfolio.html"><span class="menu-item">Portfolio</span></a>
         <a href="developers.html"><span class="menu-item">Developers</span></a>
@@ -25,25 +26,44 @@
     <main>
       <div class="btns">
         <div class="uni">
-          <a href="students-kmu.html">
-            <button class="uni_btn">
-              <span class="btn--text">국민대학교</span>
-            </button>
-          </a>
+          <img src="img/국민대.jpg" alt="" class="uni_img_before">
+          <span class="text_span">국민대학교</span>
+          <span class="uni_hover">
+            <img src="img/국민대.jpg" alt="" class="uni_img_after">
+            <span class="text_span">국민대학교</span>
+          </span>
+          <a href="students-kmu.html"></a>
         </div>
         <div class="info">
-          <a href="students-entrance.html">
-            <button class="info_btn1">
-              <span class="btn--text">입시</span>
-            </button>
-          </a>
-          <a href="studetns-coding.html">
-            <button class="info_btn2">
-              <span class="btn--text">코딩 공부</span>
-            </button>
-          </a>
+          <div class="entrance">
+            <img src="img/입시예.jpg" alt="" class="entrance_img_before">
+            <span class="text_span">입시</span>
+            <span class="entrance_hover">
+              <img src="img/입시예.jpg" alt="" class="entrance_img_after">
+              <span class="text_span">입시</span>
+            </span>
+            <a href="students-entrance.html"></a>
+          </div>
+          <div class="coding">
+            <img src="img/코딩예.jpg" alt="" class="coding_img_before">
+            <span class="text_span">코딩공부 팁</span>
+            <span class="coding_hover">
+              <img src="img/코딩예.jpg" alt="" class="coding_img_after">
+              <span class="text_span">코딩공부 팁</span>
+            </span>
+            <a href="students-coding.html"></a>
+          </div>
         </div>
       </div>
     </main>
+    <footer>
+      <div class="footer-title">
+        <span>Hello World! Hello SoVA!</span>
+      </div>
+      <div class="footer-detail">
+        <span>e-mail: sova.jcorep6@gmail.com</span>
+        <span>찾아오시는 길: 서울특별시 성북구 정릉로 77 (국민대학교)</span>
+      </div>
+    </footer>
   </body>
 </html>
