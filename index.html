@@ -8,8 +8,16 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <script src="https://kit.fontawesome.com/165cf95758.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.slider').bxSlider();
+      });
+    </script>
+
   </head>
   <body>
     <header>
@@ -25,7 +33,13 @@
       </div>
     </header>
     <main>
-      <section class="background-img">
+      <div class="slider">
+        <div><img src="img/테스트 사진.png" alt="" ></div>
+        <div><img src="img/테스트 이미지2.png" alt=""></div>
+        <div><img src="img/테스트 사진.png" alt=""></div>
+        <div><img src="img/테스트 이미지2.png" alt=""></div>
+      </div>
+      <!-- <section class="background-img">
         <div class="slides">
           <input type="radio" name="slide" id="slide1" checked>
           <input type="radio" name="slide" id="slide2">
@@ -34,7 +48,7 @@
 
           <ul class="list">
             <li>
-              <a> <!--harf를 없애야지 첫페이지로 안넘어감-->
+              <a>
                 <label for="slide4" class="left"><i class="fas fa-chevron-left"></i></label>
                 <img src="img/home_1.png" alt="">
                 <label for="slide2" class="right"><i class="fas fa-chevron-right"></i></label>
@@ -69,7 +83,7 @@
             <label for="slide4"></label>
           </p>
         </div>
-      </section>
+      </section>  -->
       <section class="about-us">
         <div class="upline">
           <hr id="hline">
