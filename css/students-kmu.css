@@ -1,0 +1,15 @@
+.students-kmu_name{
+    background-image: url("../img/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.students-kmu_post1{
+    background-image: url("../img/back2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.students-kmu_post2{
+    background-image: url("../img/back3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
