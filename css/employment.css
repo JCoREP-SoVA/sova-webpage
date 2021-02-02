@@ -23,6 +23,14 @@ main{
   font-family: 'Jal_Onuel';
 }
 
+div{
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 .btns{
   display: flex;
   flex-direction: column;
@@ -137,6 +145,8 @@ main{
   font-size: 7vh;
   z-index: 1;
   font-weight: bold;
+  color: #ffffff;
+  text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
 }
 
 .info{

@@ -8,8 +8,15 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <script src="https://kit.fontawesome.com/165cf95758.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.slider').bxSlider();
+      });
+    </script>
   </head>
   <body>
     <header>
@@ -25,7 +32,13 @@
       </div>
     </header>
     <main>
-      <section class="background-img">
+      <div class="slider">
+        <div><img src="img/테스트 사진.png" alt="" ></div>
+        <div><img src="img/테스트 이미지2.png" alt=""></div>
+        <div><img src="img/테스트 사진.png" alt=""></div>
+        <div><img src="img/테스트 이미지2.png" alt=""></div>
+      </div>
+      <!-- <section class="background-img">
         <div class="slides">
           <input type="radio" name="slide" id="slide1" checked>
           <input type="radio" name="slide" id="slide2">
@@ -34,7 +47,7 @@
 
           <ul class="list">
             <li>
-              <a> <!--harf를 없애야지 첫페이지로 안넘어감-->
+              <a>
                 <label for="slide4" class="left"><i class="fas fa-chevron-left"></i></label>
                 <img src="img/home_1.png" alt="">
                 <label for="slide2" class="right"><i class="fas fa-chevron-right"></i></label>
@@ -69,12 +82,12 @@
             <label for="slide4"></label>
           </p>
         </div>
-      </section>
+      </section>  -->
       <section class="about-us">
         <div class="upline">
-          <hr id="hline">
+          <hr class= "hline">
           <span class="upline_name">SoVA</span>
-          <hr id="hline">
+          <hr class="hline">
         </div>
         <div class="upimgs">
           <div class="upimgs_person">
@@ -146,6 +159,8 @@
         </div>
       </section>
     </main>
+    <hr class="hline2">
+    <hr class="hline2">
     <footer>
       <div class="footer-title">
         <span>Hello World! Hello SoVA!</span>
@@ -153,6 +168,8 @@
       <div class="footer-detail">
         <span>e-mail: sova.jcorep6@gmail.com</span>
         <span>찾아오시는 길: 서울특별시 성북구 정릉로 77 (국민대학교)</span>
+        <span style="position: absolute; top: 175%; left: 91%;">[배경음악]</span>
+        <audio autoplay controls loop src="img/back.mp3" style= "position: absolute; top: 178%; left: 85%;"></audio>
       </div>
     </footer>
     <script src="js/copyEmail.js"></script>
