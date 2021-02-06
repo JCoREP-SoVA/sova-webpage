@@ -23,6 +23,14 @@ main{
   background-color: #7C7C7C;
 }
 
+div{
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 .btns{
   display: flex;
   flex-direction: column;
@@ -123,9 +131,9 @@ main{
   width: 23vw;
 }
 
-.uni_img_before,
-.coding_img_before,
-.entrance_img_before{
+.uni_img_after,
+.coding_img_after,
+.entrance_img_after{
   filter: blur(2px) grayscale(100%);
 }
 
@@ -137,6 +145,8 @@ main{
   font-size: 5vh;
   z-index: 1;
   font-weight: bold;
+  color: #ffffff;
+  text-shadow: -3px 0 #000, 0 3px #000, 3px 0 #000, 0 -3px #000;
 }
 
 .info{
@@ -147,9 +157,6 @@ main{
   width: 50vw;
   margin-top: 3.5vw;
 }
-
-
-
 
 .students-coding_name,
 .students-kmu_name,
