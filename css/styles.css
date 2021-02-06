@@ -23,3 +23,21 @@ body {
     font-size: 2rem;
   }
 }
+
+@media (max-width: 500px) {
+  .warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    position: fixed;
+    z-index: 999900000;
+  }
+
+  .warning span {
+    color: #ffffff;
+    font-size: 1.2rem;
+  }
+}
