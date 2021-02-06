@@ -7,6 +7,12 @@ body {
 }
 
 @media (max-width: 900px) {
+  html,
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+
   .warning {
     display: flex;
     justify-content: center;
@@ -23,3 +29,30 @@ body {
     font-size: 2rem;
   }
 }
+<<<<<<< HEAD
+=======
+
+@media (max-width: 500px) {
+  html,
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    position: fixed;
+    z-index: 999900000;
+  }
+
+  .warning span {
+    color: #ffffff;
+    font-size: 1.2rem;
+  }
+}
+>>>>>>> 0f84d140b68cc210b07b913b82e919b25fa8615d
