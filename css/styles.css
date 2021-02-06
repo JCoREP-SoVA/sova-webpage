@@ -1,3 +1,25 @@
 body {
   background-color: #333333;
 }
+
+.warning {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    position: fixed;
+    z-index: 999900000;
+  }
+
+  .warning span {
+    color: #ffffff;
+    font-size: 2rem;
+  }
+}
