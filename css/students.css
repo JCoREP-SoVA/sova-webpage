@@ -16,11 +16,11 @@ html,
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #7C7C7C;
 }
 
 main{
   font-family: 'Jal_Onuel';
+  background-color: #7C7C7C;
 }
 
 div{
@@ -171,6 +171,8 @@ div{
 .students-coding_post2,
 .students-kmu_post1,
 .students-kmu_post2,
+.students-kmu_post3,
+.students-kmu_post4,
 .students-entrance_post1,
 .students-entrance_post2{
   display: flex;
@@ -182,6 +184,7 @@ div{
 
 .students-coding_post2,
 .students-kmu_post2,
+.students-kmu_post4,
 .students-entrance_post2{
   background-color: #C4C4C4;
 }
@@ -189,8 +192,8 @@ div{
 .coding_post_img,
 .kmu_post_img,
 .entrance_post_img{
-  width: 18vw;
-  height: 25vh;
+  /* width: 18vw;
+  height: 25vh; */
   margin-left: 5vw;
 }
 
