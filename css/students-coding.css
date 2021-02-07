@@ -3,3 +3,9 @@
         background-repeat: no-repeat;
         background-size: cover;
 }
+.coding_post_info_name1:hover{
+    color: red;
+}
+.coding_post_info_name2:hover{
+    color: white;
+}
