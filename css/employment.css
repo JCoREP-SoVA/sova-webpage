@@ -1,13 +1,15 @@
 @font-face {
   font-family: 'MaruBuri-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Jal_Onuel';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Onuel.woff') format('woff');
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Onuel.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -16,14 +18,22 @@ html,
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #7C7C7C;
+  background-color: #7c7c7c;
 }
 
-main{
+main {
   font-family: 'Jal_Onuel';
 }
 
-.btns{
+div {
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.btns {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,7 +43,7 @@ main{
 
 .uni,
 .hire,
-.job{
+.job {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -60,7 +70,7 @@ main{
 .hire:after,
 .job:before,
 .job:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -82,7 +92,7 @@ main{
 
 .uni .uni_hover,
 .job .job_hover,
-.hire .hire_hover{
+.hire .hire_hover {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -93,7 +103,7 @@ main{
 
 .uni a,
 .job a,
-.hire a{
+.hire a {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -110,7 +120,7 @@ main{
 }
 
 .uni_img_before,
-.uni_img_after{
+.uni_img_after {
   width: 50vw;
   height: 27vh;
 }
@@ -118,18 +128,18 @@ main{
 .job_img_before,
 .job_img_after,
 .hire_img_before,
-.hire_img_after{
-  height: 27vh; 
+.hire_img_after {
+  height: 27vh;
   width: 23vw;
 }
 
 .uni_img_before,
 .job_img_before,
-.hire_img_before{
+.hire_img_before {
   filter: blur(2px) grayscale(100%);
 }
 
-.text_span{
+.text_span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -137,9 +147,11 @@ main{
   font-size: 7vh;
   z-index: 1;
   font-weight: bold;
+  color: #ffffff;
+  text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
 }
 
-.info{
+.info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -148,20 +160,12 @@ main{
   margin-top: 3.5vw;
 }
 
-
-
-
-
-
-
-
-
 .employment-hire_name,
 .employment-kmu_name,
-.employment-job_name{
+.employment-job_name {
   text-align: center;
   font-size: 75px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   padding: 15vh 0vw;
 }
 
@@ -170,7 +174,7 @@ main{
 .employment-kmu_post1,
 .employment-kmu_post2,
 .employment-job_post1,
-.employment-job_post2{
+.employment-job_post2 {
   display: flex;
   flex-direction: row;
   justify-content: left;
@@ -180,13 +184,13 @@ main{
 
 .employment-hire_post2,
 .employment-kmu_post2,
-.employment-job_post2{
-  background-color: #C4C4C4;
+.employment-job_post2 {
+  background-color: #c4c4c4;
 }
 
 .hire_post_img,
 .kmu_post_img,
-.job_post_img{
+.job_post_img {
   width: 18vw;
   height: 25vh;
   margin-left: 5vw;
@@ -194,24 +198,33 @@ main{
 
 .hire_post_info,
 .kmu_post_info,
-.job_post_info{
+.job_post_info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: left;
   margin-left: 3vw;
+  line-height: 1.5;
 }
 
 .hire_post_info_name,
 .kmu_post_info_name,
-.job_post_info_name{
-  font-size: 7vh;
+.job_post_info_name {
+  font-size: 2.2rem;
 }
 
 .hire_post_info_info,
 .kmu_post_info_info,
-.job_post_info_info{
-  font-size: 3.5vh;
+.job_post_info_info {
+  font-size: 1.5rem;
   padding-top: 2vh;
 }
 
+.hire_post_info_name a,
+.kmu_post_info_name a,
+.job_post_info_name a,
+.hire_post_info_info a,
+.kmu_post_info_info a,
+.job_post_info_info a {
+  color: rgb(46, 46, 46);
+}
