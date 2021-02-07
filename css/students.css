@@ -131,9 +131,9 @@ div{
   width: 23vw;
 }
 
-.uni_img_after,
-.coding_img_after,
-.entrance_img_after{
+.uni_img_before,
+.coding_img_before,
+.entrance_img_before{
   filter: blur(2px) grayscale(100%);
 }
 
