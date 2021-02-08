@@ -1,37 +1,23 @@
-@font-face {
-  font-family: 'MaruBuri-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Jal_Onuel';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Onuel.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 html,
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #7C7C7C;
+  background-color: #7c7c7c;
 }
 
-main{
+main {
   font-family: 'Jal_Onuel';
 }
 
-div{
-  -ms-user-select: none; 
+div {
+  -ms-user-select: none;
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
   -webkit-user-select: none;
   user-select: none;
 }
 
-.btns{
+.btns {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,7 +27,7 @@ div{
 
 .uni,
 .coding,
-.entrance{
+.entrance {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -68,7 +54,7 @@ div{
 .coding:after,
 .entrance:before,
 .entrance:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -90,7 +76,7 @@ div{
 
 .uni .uni_hover,
 .coding .coding_hover,
-.entrance .entrance_hover{
+.entrance .entrance_hover {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -101,7 +87,7 @@ div{
 
 .uni a,
 .entrance a,
-.coding a{
+.coding a {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -118,7 +104,7 @@ div{
 }
 
 .uni_img_before,
-.uni_img_after{
+.uni_img_after {
   width: 50vw;
   height: 27vh;
 }
@@ -126,30 +112,30 @@ div{
 .coding_img_before,
 .coding_img_after,
 .entrance_img_before,
-.entrance_img_after{
-  height: 27vh; 
+.entrance_img_after {
+  height: 27vh;
   width: 23vw;
 }
 
 .uni_img_after,
 .coding_img_after,
-.entrance_img_after{
+.entrance_img_after {
   filter: blur(2px) grayscale(100%);
 }
 
-.text_span{
+.text_span {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 5vh;
+  font-size: 2rem;
   z-index: 1;
   font-weight: bold;
   color: #ffffff;
   text-shadow: -3px 0 #000, 0 3px #000, 3px 0 #000, 0 -3px #000;
 }
 
-.info{
+.info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -160,10 +146,10 @@ div{
 
 .students-coding_name,
 .students-kmu_name,
-.students-entrance_name{
+.students-entrance_name {
   text-align: center;
   font-size: 75px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   padding: 15vh 0vw;
 }
 
@@ -172,7 +158,7 @@ div{
 .students-kmu_post1,
 .students-kmu_post2,
 .students-entrance_post1,
-.students-entrance_post2{
+.students-entrance_post2 {
   display: flex;
   flex-direction: row;
   justify-content: left;
@@ -182,13 +168,13 @@ div{
 
 .students-coding_post2,
 .students-kmu_post2,
-.students-entrance_post2{
-  background-color: #C4C4C4;
+.students-entrance_post2 {
+  background-color: #c4c4c4;
 }
 
 .coding_post_img,
 .kmu_post_img,
-.entrance_post_img{
+.entrance_post_img {
   width: 18vw;
   height: 25vh;
   margin-left: 5vw;
@@ -196,7 +182,7 @@ div{
 
 .coding_post_info,
 .kmu_post_info,
-.entrance_post_info{
+.entrance_post_info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -206,14 +192,13 @@ div{
 
 .coding_post_info_name,
 .kmu_post_info_name,
-.entrance_post_info_name{
+.entrance_post_info_name {
   font-size: 7vh;
 }
 
 .coding_post_info_info,
 .kmu_post_info_info,
-.entrance_post_info_info{
+.entrance_post_info_info {
   font-size: 3.5vh;
   padding-top: 2vh;
 }
-
