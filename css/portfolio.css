@@ -63,7 +63,7 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.3;
+  opacity: 0.6;
 }
 
 .menu-roadmap{
@@ -78,7 +78,7 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.3;
+  opacity: 0.6;
 }
 
 .menu-pgrowth{
@@ -90,7 +90,7 @@ main{
   position: absolute;
   top: 69%;
   left: 35%;
-  opacity: 0.3;
+  opacity: 0.6;
 
   display: flex;
   justify-content: center;
