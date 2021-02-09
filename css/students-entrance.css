@@ -3,3 +3,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.students-kmu_post1,
+.students-kmu_post2,
+.students-kmu_post3,
+.students-kmu_post4{
+    overflow-x: scroll;
+}
