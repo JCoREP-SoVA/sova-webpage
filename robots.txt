@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://jcorep6-sova.netlify.app/sitemap.xml

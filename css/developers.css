@@ -12,6 +12,7 @@ main {
   width: 100vw;
   height: 100vh;
   background-color: #c4c4c4;
+  background-image: url('../img/meet-collection.png');
 }
 
 .developers_developers {
@@ -67,7 +68,7 @@ main {
 .vision {
   width: 100vw;
   height: 50vh;
-  background-color: #7c7c7c;
+  background-color: #c4c4c4;
 }
 
 .vision_vision {
@@ -103,10 +104,6 @@ main {
   transition: 2s ease-in-out;
 }
 
-.vision_vision.animate {
-  transform: translateX(3rem);
-}
-
 .vision_list {
   box-sizing: border-box;
   display: flex;
@@ -116,6 +113,7 @@ main {
   padding-top: 30px;
   font-size: 2em;
   font-weight: bold;
+  margin-top: 2rem;
 }
 
 .vision_list-vision {
@@ -133,7 +131,7 @@ main {
 .core-value {
   width: 100vw;
   height: 50vh;
-  background-color: #c4c4c4;
+  background-color: #7c7c7c;
   display: flex;
   flex-direction: column;
 }
@@ -211,14 +209,14 @@ main {
 }
 
 .jcorep_title:hover {
-  transition: 0.8s all;
+  transition: 0.5s all ease-in-out;
   color: #40e0d0;
   background-color: black;
   width: 1000px;
 }
 
 .jcorep_title:hover + .jcorep_contents {
-  transition: 0.8s all;
+  transition: 0.5s all ease-in-out;
   display: flex;
   background-color: #24b1a3;
 }
