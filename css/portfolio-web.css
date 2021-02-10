@@ -42,23 +42,23 @@ h1 {
 }
 .week1-box1{
   height: 100%;
-  width: 29%;
+  width: 16%;
   /* border-style: solid;
   border-width: 5px;
   border-color: red; */
   float: left;
   background-color:  #a8a4a4bd;
-  background-image: url("../img/하람형19.png");
+  background-image: url("../img/쿠민1.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   -webkit-filter: grayscale(100%);
   filter: #373a3c;
 }
 .week1-box2{
   height: 100%;
-  width: 69.8%;
+  width: 82.8%;
   float: left;
-  background-image: url("../img/소바파이어.png");
+  background-image: url("../img/소바과제1.png");
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-filter: grayscale(100%);
@@ -72,23 +72,23 @@ h1 {
 }
 .week2-box1{
   height: 100%;
-  width: 29%;
+  width: 16%;
   /* border-style: solid;
   border-width: 5px;
   border-color: red; */
   float: left;
   background-color:  #a8a4a4bd;
-  background-image: url("../img/고양이1.jpg");
+  background-image: url("../img/쿠민2.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   -webkit-filter: grayscale(100%);
   filter: #373a3c;
 }
 .week2-box2{
   height: 100%;
-  width: 69.8%;
+  width: 82.8%;
   float: left;
-  background-image: url("../img/고양이2.jpg");
+  background-image: url("../img/스터디2주차.png");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-filter: grayscale(100%);
@@ -102,13 +102,13 @@ h1 {
 }
 .week3-box1{
   height: 100%;
-  width: 29%;
+  width: 16%;
   /* border-style: solid;
   border-width: 5px;
   border-color: red; */
   float: left;
   background-color:  #a8a4a4bd;
-  background-image: url("../img/강아지1.jpg");
+  background-image: url("../img/쿠민3.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-filter: grayscale(100%);
@@ -116,9 +116,9 @@ h1 {
 }
 .week3-box2{
   height: 100%;
-  width: 69.8%;
+  width: 82.8%;
   float: left;
-  background-image: url("../img/강아지2.jpg");
+  background-image: url("../img/소바과제2.png");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-filter: grayscale(100%);
@@ -132,23 +132,23 @@ h1 {
 }
 .week4-box1{
   height: 100%;
-  width: 29%;
+  width: 16%;
   /* border-style: solid;
   border-width: 5px;
   border-color: red; */
   float: left;
   background-color:  #a8a4a4bd;
-  background-image: url("../img/고양이1.jpg");
+  background-image: url("../img/쿠민4.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   -webkit-filter: grayscale(100%);
   filter: #373a3c;
 }
 .week4-box2{
   height: 100%;
-  width: 69.8%;
+  width: 82.8%;
   float: left;
-  background-image: url("../img/고양이2.jpg");
+  background-image: url("../img/스터디4주차.png");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-filter: grayscale(100%);
@@ -160,12 +160,9 @@ h1 {
 .animateIn:hover .week4-box2{
   filter: none;
 }
-.week5-box1{
+/* .week5-box1{
   height: 100%;
   width: 29%;
-  /* border-style: solid;
-  border-width: 5px;
-  border-color: red; */
   float: left;
   background-color:  #a8a4a4bd;
   background-image: url("../img/강아지1.jpg");
@@ -193,9 +190,6 @@ h1 {
 .week6-box1{
   height: 100%;
   width: 29%;
-  /* border-style: solid;
-  border-width: 5px;
-  border-color: red; */
   float: left;
   background-color:  #a8a4a4bd;
   background-image: url("../img/고양이1.jpg");
@@ -219,7 +213,7 @@ h1 {
 }
 .animateIn:hover .week6-box2{
   filter: none;
-}
+} */
 .week1{
   width: 100vw;
   height: 50vh;
@@ -253,3 +247,25 @@ h1 {
   100%{transform: translate(0)}
 } */
 
+
+
+#profile_img_upload{
+  width: 0.1px;
+height: 0.1px;
+opacity: 0;
+overflow: hidden;
+position: absolute;
+z-index: -1;
+}
+
+#profile_img_upload + label {
+  border: 1px solid #d9e1e8;
+  background-color: #fff;
+  color: #2b90d9;
+  border-radius: 2rem;
+  padding: 8px 17px 8px 17px;
+  font-weight: 500;
+  font-size: 15px;
+  box-shadow: 1px 2px 3px 0px #f2f2f2;
+  outline: none;
+}

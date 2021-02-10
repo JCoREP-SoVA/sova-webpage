@@ -1,7 +1,7 @@
 .students-coding_name{
     background-image: url("../img/study2.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .coding_post_info_name1:hover{
     color: white;

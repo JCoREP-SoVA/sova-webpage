@@ -1,8 +1,4 @@
-html,
-body {
-  width: 100vw;
-}
-
+/* 
 .title {
   width: 100vw;
   height: 15vh;
@@ -34,32 +30,61 @@ body {
   left: 50%;
 }
 .img1 {
+  width: 9vh;
+  height: 9vh;
+  border: 5px solid white;
   transform: translate(-50%,-50%);
   transition: transform 1.5s;
   position: absolute;
   top: 20%;
   left: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
 }
 .img2 {
+  width: 9vh;
+  height: 9vh;
+  border: 5px solid white;
   transform: translate(-50%,-50%);
   transition: transform 1.5s;
   position: absolute;
   top: 20%;
   left: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
 }
 .img3 {
+  width: 9vh;
+  height: 9vh;
+  border: 5px solid white;
   transform: translate(-50%,-50%);
   transition: transform 1.5s;
   position: absolute;
   top: 50%;
   left: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+
 }
 .img4 {
+  width: 9vh;
+  height: 9vh;
+  border: 5px solid white;
   transform: translate(-50%,-50%);
   transition: transform 1.5s;
   position: absolute;
   top: 50%;
   left: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
 }
 .img5{
   transform: translate(-50%,-50%);
@@ -77,61 +102,250 @@ body {
 }
 .img1:hover  {
   transform: translate(-50%,-50%) scale(1.2);
+  background-color: white;
 }
 .img2:hover  {
   transform: translate(-50%,-50%) scale(1.2);
+  background-color: white;
 }
 .img3:hover  {
   transform: translate(-50%,-50%) scale(1.2);
+  background-color: white;
 }
 .img4:hover  {
   transform: translate(-50%,-50%) scale(1.2);
+  background-color: white;
 }
 .img5:hover  {
   transform: translate(-50%,-50%) scale(1.2);
+  background-color: white;
 }
 .img6:hover  {
   transform: translate(-50%,-50%) scale(1.2);
-}
-.popup{
-  width: 50vw;
-  height: 50vh;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  text-align: right;
-  padding: 20px;
-  box-sizing: border-box;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  background: #fff;
+  background-color: white;
+} */
+
+
+
+
+
+#profile_img_upload{
+  width: 0.1px;
+  height: 0.1px;
   opacity: 0;
-  transition: all 0.5s;
-  z-index: 5;
-
-}
-.popup a{
-  color: gray;
-  text-decoration: none;
-}
-.popup:target {
-  opacity: 1;
-}
-.popup:target + .dim {
-  opacity: 1;
-  z-index: 2;
-}
-
-.dim{
+  overflow: hidden;
   position: absolute;
-  left: 0;
-  top: 0;
-  background: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
-  opacity: 0; 
   z-index: -1;
-  transition: all 0.5s;
 }
 
+#profile_img_upload + label {
+  border: 1px solid #d9e1e8;
+  background-color: #fff;
+  color: #2b90d9;
+  border-radius: 2rem;
+  padding: 8px 17px 8px 17px;
+  font-weight: 500;
+  font-size: 15px;
+  box-shadow: 1px 2px 3px 0px #f2f2f2;
+  outline: none;
+}
+
+.week1{
+  width: 100vw;
+  height: 50vh;
+  background-color: #c4c4c4;
+}
+
+.animateOut{
+  width: 100vw;
+  height: 50vh;
+  background-color: #7c7c7c;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.animateIn{
+  width: 100vw;
+  height: 50vh;
+  background-color: #7c7c7c;
+  opacity: 1;
+  transition: opacity 2.5s ease;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 200vh;
+}
+
+.title {
+  width: 100vw;
+  height: 50vh;
+  background-image: url("../img/유체화킨하람형.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+  filter: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: watch 0.3s linear infinite both;
+}
+.title > img{
+  -webkit-filter: grayscale(100%);
+  filter: gray;
+}
+
+.main_banner {
+  width: 28vw;
+  height: 9vw;
+  border-color: black;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 5vh;
+  font-weight: bold;
+  color: white;
+}
+
+h1 {
+  font-size: 3vw;
+  font-style: italic;
+  font-weight: bold;
+  padding: 2vh;
+}
+.week1-box1{
+  height: 100%;
+  width: 16%;
+  /* border-style: solid;
+  border-width: 5px;
+  border-color: red; */
+  float: left;
+  background-color:  #a8a4a4bd;
+  -webkit-filter: grayscale(100%);
+  filter: #373a3c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.week1-box2{
+  height: 100%;
+  width: 82.8%;
+  float: left;
+  -webkit-filter: grayscale(100%);
+  filter: #373a3c;
+  display: flex;
+  align-items:center;
+  justify-content:space-around;
+}
+.week1:hover .week1-box1{
+  filter: none;
+}
+.week1:hover .week1-box2{
+  filter: none;
+}
+.week2-box1{
+  height: 100%;
+  width: 16%;
+  /* border-style: solid;
+  border-width: 5px;
+  border-color: red; */
+  float: left;
+  background-color:  #a8a4a4bd;
+  -webkit-filter: grayscale(100%);
+  filter: #373a3c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.week2-box2{
+  height: 100%;
+  width: 82.8%;
+  -webkit-filter: grayscale(100%);
+  filter: #373a3c;
+  
+}
+/* .animateIn:hover .week2-box1{
+  filter: none;
+}
+.animateIn:hover .week2-box2{
+  filter: none;
+} */
+.week3-box1{
+  height: 100%;
+  width: 16%;
+  /* border-style: solid;
+  border-width: 5px;
+  border-color: red; */
+  float: left;
+  background-color:  #a8a4a4bd;
+  -webkit-filter: grayscale(100%);
+  filter: #373a3c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.week3-box2{
+  height: 100%;
+  width: 82.8%;
+  float: left;
+  -webkit-filter: grayscale(100%);
+  filter: #373a3c;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* .animateIn:hover .week3-box1{
+  filter: none;
+}
+.animateIn:hover .week3-box2{
+  filter: none;
+} */
+.week4-box1{
+  height: 100%;
+  width: 16%;
+  /* border-style: solid;
+  border-width: 5px;
+  border-color: red; */
+  background-color:  #a8a4a4bd;
+  -webkit-filter: grayscale(100%);
+  filter: #373a3c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.week4-box2{
+  height: 100%;
+  width: 82.8%;
+  float: left;
+  -webkit-filter: grayscale(100%);
+  filter: #373a3c;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.box{
+  width: 22vw;
+  height: 10vw;
+  border: 5px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+}
+.box:hover{
+  background-color: wheat;
+}
+.box1{
+  width: 22vw;
+  height: 10vw;
+  border: 5px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+}
+.box1:hover{
+  background-color: gainsboro;
+}
